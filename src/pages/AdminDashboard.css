@@ -1,0 +1,105 @@
+/* ============================= */
+/* Overall Dashboard Layout       */
+/* ============================= */
+
+.admin-layout {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5f6fa;
+}
+
+
+/* ============================= */
+/* Main Content                   */
+/* ============================= */
+
+.main-content {
+    margin-left: 250px;   /* Same as Sidebar width */
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ============================= */
+/* Dashboard Content              */
+/* ============================= */
+
+.dashboard-content {
+    flex: 1;
+    padding: 30px;
+}
+
+
+/* ============================= */
+/* Dashboard Heading              */
+/* ============================= */
+
+.dashboard-content h1 {
+    margin: 0 0 8px;
+
+    font-size: 28px;
+    font-weight: 600;
+
+    color: #1e293b;
+}
+
+
+.dashboard-content p {
+    margin: 0 0 25px;
+
+    font-size: 16px;
+    color: #64748b;
+}
+
+
+/* ============================= */
+/* Statistics Cards               */
+/* ============================= */
+
+.stats-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* ============================= */
+/* Tablet                        */
+/* ============================= */
+
+@media (max-width: 1000px) {
+
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ============================= */
+/* Mobile                        */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+    .main-content {
+        margin-left: 250px;
+    }
+
+    .dashboard-content {
+        padding: 20px;
+    }
+
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-content h1 {
+        font-size: 24px;
+    }
+
+}
