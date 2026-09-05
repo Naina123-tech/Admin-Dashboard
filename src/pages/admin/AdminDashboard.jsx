@@ -1,6 +1,6 @@
-import Sidebar from "../Components/Sidebar";
-import Navbar from "../Components/Navbar";
-import StatCard from "../Components/StatCard";
+import Sidebar from "../../Components/Sidebar";
+import Navbar from "../../Components/Navbar";
+import StatCard from "../../Components/StatCard";
 import "./AdminDashboard.css";
 function 
 AdminDashboard(){
