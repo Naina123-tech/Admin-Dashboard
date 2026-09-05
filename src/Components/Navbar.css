@@ -139,7 +139,7 @@
     font-weight: 500;
     cursor: pointer;
     transition: background 0.2s;
-}
+} 
 
 /* Logout Button Hover */
 .logout-button:hover {
