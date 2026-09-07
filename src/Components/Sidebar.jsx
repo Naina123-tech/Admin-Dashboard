@@ -34,13 +34,14 @@ function Sidebar() {
           🚨 <span>SOS Alerts</span>
       </Link>
 
-        <a href="#" className="menu-item">
+        <Link to="/verification" className="menu-item">
           ✅ <span>Verification</span>
-        </a>
+          </Link>
+        
 
-        <a href="#" className="menu-item">
+        <Link to="/analytics" className="menu-item">
           📈 <span>Analytics</span>
-        </a>
+        </Link>
 
         <a href="#" className="menu-item">
           🔔 <span>Notifications</span>

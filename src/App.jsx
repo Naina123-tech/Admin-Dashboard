@@ -7,6 +7,8 @@ import { useAuth } from "./context/AuthContext";
 import Users from "./pages/admin/Users";
 import Incidents from "./pages/admin/Incidents";
 import SOSAlerts from "./pages/admin/SOSAlerts";
+import Analytics from "./pages/admin/Analytics";
+import Verification from "./pages/admin/Verification";
 
 // Protected Route
 const ProtectedRoute = ({ children }) => {
@@ -71,6 +73,20 @@ function App() {
                 />
                 <Route path="/sos-alerts"
                 element={<SOSAlerts/>}/>
+                <Route path="/analytics"
+                element={
+                    <ProtectedRoute>
+                        <Analytics/>
+                    </ProtectedRoute>
+
+                }
+                />
+                <Route path="/verification"
+                element={<ProtectedRoute>
+                    <Verification/>
+                </ProtectedRoute>}
+                />
+
 
             </Routes>
 
