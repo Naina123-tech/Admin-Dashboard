@@ -25,13 +25,14 @@ function Sidebar() {
           </Link>
         
 
-        <a href="#" className="menu-item">
+        <Link to="/incidents" className="menu-item">
           📋 <span>Incidents</span>
-        </a>
+          </Link>
+        
 
         <a href="#" className="menu-item">
           🚨 <span>SOS Alerts</span>
-        </a>
+      </a>
 
         <a href="#" className="menu-item">
           ✅ <span>Verification</span>

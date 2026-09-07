@@ -5,6 +5,7 @@ import AdminDashboard from "./pages/admin/AdminDashboard";
 
 import { useAuth } from "./context/AuthContext";
 import Users from "./pages/admin/Users";
+import Incidents from "./pages/admin/Incidents";
 
 // Protected Route
 const ProtectedRoute = ({ children }) => {
@@ -60,6 +61,11 @@ function App() {
                 <Route path="/users"
                 element={<ProtectedRoute>
                     <Users/>
+                </ProtectedRoute>}
+                />
+                <Route path="/incidents"
+                element={<ProtectedRoute>
+                    <Incidents/>
                 </ProtectedRoute>}
                 />
 
