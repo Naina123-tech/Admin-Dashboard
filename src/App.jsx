@@ -4,6 +4,7 @@ import AdminLogin from "./pages/auth/AdminLogin";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 
 import { useAuth } from "./context/AuthContext";
+import Users from "./pages/admin/Users";
 
 // Protected Route
 const ProtectedRoute = ({ children }) => {
@@ -55,6 +56,11 @@ function App() {
                 <Route
                     path="*"
                     element={<Navigate to="/admin-login" replace />}
+                />
+                <Route path="/users"
+                element={<ProtectedRoute>
+                    <Users/>
+                </ProtectedRoute>}
                 />
 
             </Routes>

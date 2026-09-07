@@ -1,5 +1,6 @@
 import React from "react";
 import "./Sidebar.css";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   return (
@@ -15,11 +16,14 @@ function Sidebar() {
 
         <a href="#" className="menu-item active">
           📊 <span>Dashboard</span>
-        </a>
+          
+        </a> 
 
-        <a href="#" className="menu-item">
+        {/*Users*/}
+        <Link to="/users" className="menu-item">
           👥 <span>Users</span>
-        </a>
+          </Link>
+        
 
         <a href="#" className="menu-item">
           📋 <span>Incidents</span>
