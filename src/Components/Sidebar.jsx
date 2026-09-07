@@ -30,9 +30,9 @@ function Sidebar() {
           </Link>
         
 
-        <a href="#" className="menu-item">
+        <Link to="/sos-alerts" className="menu-item">
           🚨 <span>SOS Alerts</span>
-      </a>
+      </Link>
 
         <a href="#" className="menu-item">
           ✅ <span>Verification</span>

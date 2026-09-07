@@ -6,6 +6,7 @@ import AdminDashboard from "./pages/admin/AdminDashboard";
 import { useAuth } from "./context/AuthContext";
 import Users from "./pages/admin/Users";
 import Incidents from "./pages/admin/Incidents";
+import SOSAlerts from "./pages/admin/SOSAlerts";
 
 // Protected Route
 const ProtectedRoute = ({ children }) => {
@@ -68,6 +69,8 @@ function App() {
                     <Incidents/>
                 </ProtectedRoute>}
                 />
+                <Route path="/sos-alerts"
+                element={<SOSAlerts/>}/>
 
             </Routes>
 
